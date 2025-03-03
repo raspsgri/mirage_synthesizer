@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import ttk
 
 class RealtimeSynth:
-    def __init__(self, sample_rate=44100):
+    def __init__(self, sample_rate=48000):
         self.sample_rate = sample_rate
         self.notes = {}
         self.waveform_type = 'sine'
@@ -191,7 +191,7 @@ class SynthesizerApp(tk.Tk):
     def bind_keys(self):
         key_note_map = {
             'a': 'C', 'w': 'C#', 's': 'D', 'e': 'D#', 'd': 'E', 'f': 'F', 't': 'F#',
-            'g': 'G', 'y': 'G#', 'h': 'A', 'u': 'A#', 'j': 'B', 'k': 'C', 'o': 'C#',
+            'g': 'G', 'z': 'G#', 'h': 'A', 'u': 'A#', 'j': 'B', 'k': 'C', 'o': 'C#',
             'l': 'D', 'p': 'D#', ';': 'E', "'": 'F'
         }
         for key, note in key_note_map.items():
